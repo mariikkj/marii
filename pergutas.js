@@ -1,44 +1,39 @@
-function criaCartao (categoria, pergunta, resposta) {
+criaCartao(
 
-    let container document.getElementById('container')
+    'Programação',
     
-    let cartao document.createElement('article')
+    'O que é Python?',
     
-    cartao.className = 'cartao'
+    'O Python é uma linguagem de programação'
     
-    cartao.innerHTML =
+    )
     
-    <div class="cartao_conteudo">
+    criaCartao(
     
-    <h3>${categoria}</h3>
+    'Geografia',
     
-    <div class="cartao_conteudo_pergunta">
+    'Qual a capital da França?',
     
-    <p>${pergunta}</p>
+    'A capital da França é Paris'
     
-    </div>
+    )
     
-    <div class="cartao_conteudo_resposta">
+    criacartao(
     
-    <p>${resposta}</p>
+    'Programação',
     
-    </div>
+    'O que é uma função?',
     
-    </div>
+    'Uma função é um bloco de código que executa alguma tarefa'
     
-    let respostaEstaVisivel false
+    )
     
-    function viraCartao() {
+    criacartao(
     
-    respostaEstaVisivel !resposta EstaVisivel
+    'Lingua inglesa',
     
-    cartao.classList.toggle('active', respostaEstaVisivel)
+    'Como se diz oi em Inglês?',
     
-    }
+    'Oi em ingles é HI (RAI)'
     
-    cartao.addEventListener('click', viraCartao)
-    
-    container.appendChild(cartao)
-    
-    }
-    
+    )
